@@ -1,0 +1,220 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+
+    height: 100vh;
+    width: 100vw;
+
+    background-image: url("../img/bg.png");
+    background-size: cover;
+    background-position: top left;
+    background-repeat: no-repeat;
+    
+    overflow: hidden;
+}
+
+/* TYPOGRAPHY */
+
+.heading {
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: 700;
+    font-size: 4rem;
+    color: white;
+
+    margin: 3rem auto;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.title {
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: 700;
+    font-size: 2rem;
+    color: white;
+}
+
+.text {
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 1.6rem;
+    color: #ACACAC;
+}
+
+.output-text {
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 1.4rem;
+    color: white;
+    margin-top: 6rem;
+}
+
+.output-text--important {
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+}
+
+.output-data {
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    margin-top: 10rem;
+}
+
+#output-link {
+    color: #797FD9;
+}
+
+/* Abstracts */
+
+.mg-bottom {
+    margin-bottom: 1.3rem;
+}
+
+.mg-bottom-lg {
+    margin-bottom: 4.5rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 25rem 19rem;
+}
+
+.info {
+    width: 60rem;
+}
+.create {
+    width: 58rem;
+}
+
+.output {
+    background-color: #302E2E;
+    min-height: 28rem;
+    border-radius: 1.6rem;
+    padding: 2rem;
+    margin-top: 4.5rem;
+}
+
+input[type="text"] {
+    width: 100%;
+    height: 3.2rem;
+    background-color: #3C3838;
+    border: none;
+    border-radius: 10rem;
+    padding-left: 2rem;
+    
+    font-family: 'Roboto', 'sans-serif' !important;
+    color: white;
+}
+input:focus {
+    outline: none;
+}
+
+::placeholder {
+    font-family: 'Roboto', 'sans-serif' !important;
+    color: rgba(255, 255, 255, 0.288);
+}
+
+button {
+    background-color: white;
+    border: none;
+    border-radius: 10rem;
+    height: 3.2rem;
+    padding: 0 2rem;
+
+    cursor: pointer;
+
+    position: relative;
+    float: right;
+    bottom: 3.16rem;
+    transition: .2s all; 
+}
+
+button:focus {
+    outline: 0;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+button:active {
+    transform: scale(1);
+}
+
+.saved-link {
+    background-color: #302E2E;
+    width: 20rem;
+    height: 3rem;
+    border-radius: 10rem;
+    padding-top: 0.7rem;
+    padding-left: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+.saved-link a {
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 1.4rem;
+    color: white;
+    text-decoration: none;
+}
+
+.saved-link img {
+    width: 10px;
+    margin-left: 2rem;
+    transition: .2s all;
+}
+
+.saved-link img:hover {
+    transform: scale(1.2);
+}
+
+.saved-link img:active {
+    transform: scale(0.9);
+}
+@media screen and (max-width: 1150px) {
+    .container {
+        margin: 7rem 1.1rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .container {
+        display: block;
+        text-align: center;
+    }
+    
+    body {
+        overflow: visible;
+        background: black;
+    }
+
+    .info {
+        width: auto;
+    }
+    .create {
+        width: auto;
+        margin-top: 5rem;
+    }
+
+    .output {
+        width: auto;
+    }
+
+    html {
+        font-size: 50%;
+    }
+}
